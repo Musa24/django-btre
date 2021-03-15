@@ -1,4 +1,10 @@
-{% extends "base.html" %} {% block content %} {% load humanize %}
+{% extends "base.html" %}
+
+{% if True %}
+{% block title%} Search Result{% endblock %}
+{%endif%}
+
+{% block content %} {% load humanize %}
 
 <h1>
   {% for key,value in state_choice.items %}
